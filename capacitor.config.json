@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "selecao-curriculos",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
