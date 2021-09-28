@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Cadastrar Currículos</ion-title>
+    <ion-button slot="end" [routerLink]="['/home']">Sair</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>
+    <ion-label for="txNomeCandidato">Nome do candidato</ion-label>
+    <ion-input 
+      name="txNomeCandidato"
+      type="text" 
+      [(ngModel)]="nomeCandidato" 
+      placeholder="Digite o nome do candidato">
+    </ion-input>
+  </p>
+
+  <p>
+    <ion-label for="txVagaPretendida">Vaga pretendida</ion-label>
+    <ion-input 
+      name="txVagaPretendida"
+      type="text" 
+      [(ngModel)]="vagaPretendida" 
+      placeholder="Digite a vaga pretendida">
+    </ion-input>
+  </p>
+
+  <p>
+    <ion-label for="txGerenteAvaliador">Gerente que avalia</ion-label>
+    <ion-input 
+      name="txGerenteAvaliador"
+      type="text" 
+      [(ngModel)]="gerenteAvaliador" 
+      placeholder="Digite o gerente que avalia">
+    </ion-input>
+  </p>
+
+  <p>
+    <ion-label for="txFormacaoEducacional">Formação educacional</ion-label>
+    <ion-input 
+      name="txFormacaoEducacional"
+      type="text" 
+      [(ngModel)]="formacaoEducacional" 
+      placeholder="Digite a formação educacional">
+    </ion-input>
+  </p>
+
+  <p>
+    <ion-label for="txExperienciaProfissional">Experiência profissional</ion-label>
+    <ion-input 
+      name="txExperienciaProfissional"
+      type="text" 
+      [(ngModel)]="experienciaProfissional" 
+      placeholder="Digite a experiência profissional">
+    </ion-input>
+  </p>
+
+  <p>
+    <ion-label for="nivelIngles">Nível de conhecimento em inglês</ion-label>
+    <ion-select 
+      name="nivelIngles"
+      [(ngModel)]="nivelIngles"
+      placeholder="Selecione o nível de conhecimento em inglês">
+    <ion-select-option *ngFor="let item of niveisIngles" [value]="item.val">{{item.desc}}</ion-select-option>
+    </ion-select>
+  </p>
+
+  <div class="center">
+    <ion-button (click)="cadastrar()">Cadastrar</ion-button>
+  </div>
+
+  <ion-label color="danger">
+    {{mensagem}}
+  </ion-label>
+</ion-content>

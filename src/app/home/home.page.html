@@ -1,20 +1,37 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header color="primary">
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Seleção de Currículos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <p>
+    <ion-label for="txUsername">Identificação do usuário</ion-label>
+    <ion-input 
+      name="txUsername"
+      type="text" 
+      [(ngModel)]="username" 
+      placeholder="Digite o seu username">
+    </ion-input>
+  </p>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <p>
+    <ion-label for="txSenha">Senha</ion-label>
+    <ion-input 
+      name="txSenha"
+      type="password" 
+      [(ngModel)]="senha" 
+      placeholder="Digite a sua senha">
+    </ion-input>
+  </p>
+
+  <p>
+    <ion-button (click)="login()">Entrar</ion-button>
+  </p>
+
+  <ion-label color="danger">
+    {{mensagem}}
+  </ion-label>
 </ion-content>

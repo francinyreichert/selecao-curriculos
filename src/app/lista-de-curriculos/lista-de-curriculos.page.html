@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Lista de Currículos</ion-title>
+    <ion-button slot="end" [routerLink]="['/home']">Sair</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card" *ngFor="let item of curriculosDisponiveis">
+    <ion-card-header>
+      <ion-card-title>{{item.nomeCandidato}}</ion-card-title>
+      <ion-card-subtitle>{{item.vagaPretendida}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Formação Educacional:
+        {{item.formacaoEducacional}}
+      </p>
+      <p>
+        Experiência Profissional:
+        {{item.experienciaProfissional}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

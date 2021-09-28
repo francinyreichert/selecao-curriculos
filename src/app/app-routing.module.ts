@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'cadastrar-curriculos',
+    loadChildren: () => import('./cadastrar-curriculos/cadastrar-curriculos.module').then( m => m.CadastrarCurriculosPageModule)
+  },
+  {
+    path: 'lista-de-curriculos',
+    loadChildren: () => import('./lista-de-curriculos/lista-de-curriculos.module').then( m => m.ListaDeCurriculosPageModule)
+  }
 ];
 
 @NgModule({
