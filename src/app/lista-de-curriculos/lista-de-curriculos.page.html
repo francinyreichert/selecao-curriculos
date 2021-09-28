@@ -1,11 +1,11 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-title>Lista de Currículos</ion-title>
-    <ion-button slot="end" [routerLink]="['/home']">Sair</ion-button>
+    <ion-button color="secondary" slot="end" [routerLink]="['/home']">Sair</ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="light">
   <ion-card class="card" *ngFor="let item of curriculosDisponiveis">
     <ion-card-header>
       <ion-card-title>{{item.nomeCandidato}}</ion-card-title>
