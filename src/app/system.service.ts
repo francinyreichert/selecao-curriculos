@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 export const RH = 1;
 export const GERENTE = 2;
 export const DISPONIVEL = "Disponível";
-export const INDISPONÍVEL = "Indisponível";
+export const INDISPONIVEL = "Indisponível";
 
 @Injectable({
   providedIn: 'root'
@@ -41,8 +41,18 @@ export class SystemService {
         formacaoEducacional: 'Ciência da Computação',
         experienciaProfissional: 'Desenvolvedor na Unisinos',
         nivelIngles: 1,
-        status: false
+        status: DISPONIVEL
+      },
+      {
+        nomeCandidato: 'Ed Sheeran',
+        vagaPretendida: 'Cantor',
+        gerenteAvaliador: 'Elton John',
+        formacaoEducacional: 'Música',
+        experienciaProfissional: 'Cantor e Compositor',
+        nivelIngles: 2,
+        status: INDISPONIVEL
       }
+
     ]
     this.logado = null;
     this.evento = null;
