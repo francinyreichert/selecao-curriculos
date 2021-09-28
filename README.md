@@ -1,6 +1,8 @@
-<h2>📱 Seleção de Currículos - Home Page </h2> 
+<h2>📱 Seleção de Currículos</h2> 
 <p align="center">
-  <img src="" style="max-width:100%;">
+  <img src="https://github.com/francinyreichert/selecao-curriculos/blob/master/public/images/home.png?raw=true" style="max-width:100%;">
+  <img src="https://github.com/francinyreichert/selecao-curriculos/blob/master/public/images/cadastrar-curriculos.png?raw=true" style="max-width:100%;">
+  <img src="https://github.com/francinyreichert/selecao-curriculos/blob/master/public/images/lista-de-curriculos.png?raw=true" style="max-width:100%;">
  </p>
 <h2> 📖 Sobre</h2> 
   <p>Projeto desenvolvido durante a cadeira de Programação para Dispositivos Móveis na Unisinos, usando as tecnologias:</p>
