@@ -20,6 +20,15 @@
         Experiência Profissional:
         {{item.experienciaProfissional}}
       </p>
+      <div>
+        <ion-select
+          class="end"
+          name="status"
+          [(ngModel)]="status"
+          placeholder="Selecione se o candidato está aprovado ou não">
+        <ion-select-option *ngFor="let item of resultados" [value]="item.val">{{item.desc}}</ion-select-option>
+        </ion-select>
+      </div>
     </ion-card-content>
   </ion-card>
 </ion-content>

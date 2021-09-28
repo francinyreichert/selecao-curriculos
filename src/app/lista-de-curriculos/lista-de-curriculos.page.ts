@@ -10,6 +10,12 @@ export class ListaDeCurriculosPage implements OnInit {
 
   curriculos: any[];
   curriculosDisponiveis: any[];
+  status: string;
+
+  resultados = [
+    { desc: 'Não selecionado', val: 0},
+    { desc: 'Selecionado', val: 1}
+  ];
 
   constructor(private srv: SystemService) { }
 
@@ -20,6 +26,10 @@ export class ListaDeCurriculosPage implements OnInit {
 
   getCurriculosDisponiveis(): any[] {
     return this.curriculos.filter((curriculo) => curriculo.status === 'Disponível');
+  }
+
+  atualizarStatus() {
+    this.srv.atualizarCurriculo(this.status);
   }
 
 }

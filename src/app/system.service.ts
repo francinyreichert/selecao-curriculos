@@ -89,4 +89,8 @@ export class SystemService {
     });
   }
 
+  atualizarCurriculo(status) {
+    
+  }
+
 }

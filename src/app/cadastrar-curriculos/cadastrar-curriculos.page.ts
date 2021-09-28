@@ -13,7 +13,8 @@ export class CadastrarCurriculosPage implements OnInit {
   gerenteAvaliador: string;
   formacaoEducacional: string;
   experienciaProfissional: string;
-  mensagem: string;
+  erro: string;
+  sucesso: string;
   nivelIngles: number;
   
   niveisIngles = [
@@ -36,8 +37,9 @@ export class CadastrarCurriculosPage implements OnInit {
         this.formacaoEducacional, 
         this.experienciaProfissional,
         this.nivelIngles);
+      this.sucesso = "Currículo cadastrado com sucesso!";
     } catch (error) {
-      this.mensagem = error;
+      this.erro = error;
     }
   }
 
