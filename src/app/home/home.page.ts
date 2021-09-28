@@ -18,7 +18,6 @@ export class HomePage {
   login() {
     try {
       this.srv.login(this.username, this.senha);
-      debugger
       if (this.srv.logado.perfil === RH) {
         this.router.navigate(['/cadastrar-curriculos']);
       }
