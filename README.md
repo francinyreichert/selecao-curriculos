@@ -1,7 +1,5 @@
 <h2>📱 Seleção de Currículos</h2> 
 <p align="center">
-  <img src="https://github.com/francinyreichert/selecao-curriculos/blob/master/public/images/home.png?raw=true" style="max-width:100%;">
-  <img src="https://github.com/francinyreichert/selecao-curriculos/blob/master/public/images/cadastrar-curriculos.png?raw=true" style="max-width:100%;">
   <img src="https://github.com/francinyreichert/selecao-curriculos/blob/master/public/images/lista-de-curriculos.png?raw=true" style="max-width:100%;">
  </p>
 <h2> 📖 Sobre</h2> 
